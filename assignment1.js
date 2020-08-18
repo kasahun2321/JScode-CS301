@@ -26,13 +26,15 @@ user_input.question ("Enter the radius of the circle ", function(radius)
 {
 
     let diameter= radius*radius;
-    console.log(`diamemet of the circle is=${diameter}`);
+    console.log(`Diameter of the circle is=${diameter}`);
     area= (pi * (radius* radius));
-    console.log(`area of the  circle is=${area}`);
+    console.log(`Area of the  circle is=${area}`);
     circumference= 2*(pi * radius);
-    console.log(`circumfreance of  the circle is=${circumference}`);
+    console.log(`Circumfreance of  the circle is=${circumference}`);
     process.exit();
 })
+
+
 
 //console.log(rad);
 
