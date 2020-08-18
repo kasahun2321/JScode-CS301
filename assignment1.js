@@ -5,17 +5,27 @@ monitor the diameter, circumference, and area of the circle.*/
 //ID =111705
 
 
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++      INPUT               ++++++++++   PROCESS        ++++++++         OUTPUT       +++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++      accept radius from user    ++   diameter= radius * radius    +++  output dependes ++
+++      declare const varaible pi  ++   area= pi * (radius * radius) +++   user input of  ++
+++      declare let var diameter,  ++   circumfernce= 2*(pi* radius) +++   radius         ++
++++       area and circumference   ++                                                     ++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 //let declare variable 
 const pi=3.14;
-var area;
-var circumference;
+let  area;
+let circumference;
 
 var readline =require('readline');
 var user_input=readline.createInterface(process.stdin, process.stdout);
 user_input.question ("Enter the radius of the circle ", function(radius)
 {
 
-    var diameter= radius*radius;
+    let diameter= radius*radius;
     console.log(`diamemet of the circle is=${diameter}`);
     area= (pi * (radius* radius));
     console.log(`area of the  circle is=${area}`);
